@@ -1,0 +1,320 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shofikul-Islam Tech Point- Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4 sticky top-0 z-10">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold">Shofikul-Islam Tech Point</h1>
+                <p class="text-sm">Your soul is here</p>
+            </div>
+            <div class="space-x-4">
+                <a href="./index.html" class="hover:underline">Home</a>
+                <a href="categories.html" class="hover:underline">Categories</a>
+                <a href="./cart.html" class="hover:underline">Cart (<span id="cart-count">0</span>)</a>
+                <a href="./loging.html" class="hover:underline" id="auth-link">Login</a>
+                <a href="./loging.html" class="hover:underline">Admin</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-8">
+        <h2 class="text-2xl font-bold mb-6">Your Cart</h2>
+        <div id="cart-items" class="space-y-4"></div>
+        <div class="mt-6">
+            <p class="text-lg font-semibold">Total: $<span id="cart-total">0.00</span></p>
+            <a href="checkout.html" class="mt-4 inline-block bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Proceed to Checkout</a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Shofikul-Islam Tech Point</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"> <i class="fas fa-laptop-code"></i> Shofikul-Islam Tech Point </a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#shop" class="dropbtn">Shop <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="laptops.html">Laptops</a>
+                    <a href="desktops.html">Desktops</a>
+                    <a href="components.html">Components</a>
+                    <a href="accessories.html">Accessories</a>
+                </div>
+            </div>
+            <a href="./about-us.html">About</a>
+            <a href="./cart.html">Contact</a>
+            <a href="./admin.html">Admin</a>
+        </nav>
+        <div class="icons">
+            <button id="menu-btn" class="fas fa-bars" aria-label="Open Menu"></button>
+            <button id="search-btn" class="fas fa-search" aria-label="Open Search"></button>
+            <a href="cart.html" class="cart-icon-wrapper" aria-label="View Shopping Cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-item-count">2</span> </a>
+            <a href="loging.html" id="login-btn" class="fas fa-user" aria-label="Open Login"></a>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search products...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <main class="container mx-auto" style="padding-top: 12rem; padding-bottom: 5rem;">
+        <h1 class="title">Your Shopping Cart</h1>
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="space-y-4">
+                <div class="flex items-center justify-between border-b pb-4">
+                    <div class="flex items-center">
+                        <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=100" alt="Product" class="rounded-lg mr-4">
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-800">Ultra-Slim Notebook</h3>
+                            <p class="text-gray-600">$999.00</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="number" value="1" class="w-16 p-2 border rounded text-center">
+                        <button class="ml-4 text-red-500 hover:text-red-700"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between border-b pb-4">
+                    <div class="flex items-center">
+                        <img src="https://images.pexels.com/photos/841228/pexels-photo-841228.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Product" class="rounded-lg mr-4">
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-800">Wireless Keyboard</h3>
+                            <p class="text-gray-600">$89.00</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="number" value="1" class="w-16 p-2 border rounded text-center">
+                        <button class="ml-4 text-red-500 hover:text-red-700"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6">
+                <div class="flex justify-between text-lg font-semibold">
+                    <span>Subtotal</span>
+                    <span>$1088.00</span>
+                </div>
+                <div class="flex justify-between text-gray-600 mt-2">
+                    <span>Shipping</span>
+                    <span>$15.00</span>
+                </div>
+                <div class="flex justify-between text-2xl font-bold mt-4 border-t pt-4">
+                    <span>Total</span>
+                    <span>$1103.00</span>
+                </div>
+                <a href="checkout.html" class="block text-center w-full bg-blue-600 text-white mt-6 py-3 rounded-lg text-lg font-bold hover:bg-blue-700">Proceed to Checkout</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html"><i class="fas fa-arrow-right"></i> Home</a>
+                <a href="laptops.html"><i class="fas fa-arrow-right"></i> Laptops</a>
+                <a href="desktops.html"><i class="fas fa-arrow-right"></i> Desktops</a>
+                <a href="about-us.html"><i class="fas fa-arrow-right"></i> About</a>
+                <a href="contact-us.html"><i class="fas fa-arrow-right"></i> Contact</a>
+                <a href="account.html"><i class="fas fa-arrow-right"></i> My Account</a>
+            </div>
+            <div class="box">
+                <h3>Policies</h3>
+                <a href="privacy-policy.html"><i class="fas fa-arrow-right"></i> Privacy Policy</a>
+                <a href="terms-of-service.html"><i class="fas fa-arrow-right"></i> Terms of Service</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/share/19PjMrpXgA/" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://www.instagram.com/mdshofikul492?igsh=MTFoY2gzdTFmNnYxaw==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/in/md-shofikul-islam-664224217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
+            </div>
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Don't miss any offers!</p>
+                <form action="">
+                    <input type="email" placeholder="your.email@example.com">
+                    <input type="submit" value="Subscribe" class="btn">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div class="credit">Created by <span>Shofikul Islam</span> | All Rights Reserved</div>
+    <script src="script.js"></script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Shofikul-Islam Tech Point</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add some basic styles for the cart page */
+        .cart-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #f9f9f9;
+            border-radius: .5rem;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
+        }
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+        .cart-item-info {
+            flex-grow: 1;
+        }
+        .cart-item-info h3 {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .cart-item-info .price {
+            font-size: 1rem;
+            color: #27ae60;
+        }
+        .remove-btn {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: .5rem 1rem;
+            border-radius: .5rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .remove-btn:hover {
+            background: #c0392b;
+        }
+        .cart-summary {
+            margin-top: 2rem;
+            text-align: right;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .empty-cart-message {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #666;
+            padding: 4rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+         <a href="index.html" class="logo"> <i class="fas fa-laptop-code"></i> Shofikul-Islam Tech Point </a>
+         <nav class="navbar">
+             <a href="index.html">Home</a>
+             <div class="dropdown">
+                 <a href="#shop" class="dropbtn">Shop <i class="fas fa-caret-down"></i></a>
+                 <div class="dropdown-content">
+                     <a href="laptops.html">Laptops</a>
+                     <a href="desktops.html">Desktops</a>
+                     <a href="components.html">Components</a>
+                     <a href="accessories.html">Accessories</a>
+                 </div>
+             </div>
+             <a href="about-us.html">About</a>
+             <a href="contact-us.html">Contact</a>
+             <a href="admin.html">Admin</a>
+         </nav>
+         <div class="icons">
+             <button id="menu-btn" class="fas fa-bars" aria-label="Open Menu"></button>
+             <button id="search-btn" class="fas fa-search" aria-label="Open Search"></button>
+             <a href="cart.html" class="cart-icon-wrapper" aria-label="View Shopping Cart">
+                 <i class="fas fa-shopping-cart"></i>
+                 <span class="cart-item-count">0</span>
+             </a>
+             <a href="loging.html" id="login-btn" class="fas fa-user" aria-label="Open Login"></a>
+         </div>
+         <form action="" class="search-form">
+             <input type="search" id="search-box" placeholder="Search products...">
+             <label for="search-box" class="fas fa-search"></label>
+         </form>
+    </header>
+
+    <main style="padding-top: 10rem;">
+        <section class="cart-container">
+            <h1 class="title">Your Shopping Cart 🛒</h1>
+            <div id="cart-items-container"></div>
+            
+            <div class="cart-summary">
+                Total: <span id="cart-total">$0.00</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> -->

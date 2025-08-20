@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shofikul-Islam Tech Point- Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4 sticky top-0 z-10">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold">Shofikul-Islam Tech Point</h1>
+                <p class="text-sm">Your soul is here</p>
+            </div>
+                        <div class="space-x-4">
+                <a  href="index.html" class="hover:underline">Home</a>
+                <a  target="_blank" href="./loging.html" class="hover:underline">Loging</a>
+                 <a  href="admin.html" class="hover:underline">Admin</a>
+                <!-- <a href="categories.html" class="hover:underline">Categories</a> -->
+                <!-- <a href="cart.html" class="hover:underline">Cart (<span id="cart-count">0</span>)</a> -->
+                <!-- <a href="login.html" class="hover:underline" id="auth-link">Login</a> -->
+               
+                
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto py-8">
+        <h2 class="text-2xl font-bold mb-6">Admin Dashboard</h2>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h3 class="text-lg font-semibold mb-4">Add New Tech Point</h3>
+            <div class="space-y-4">
+                <div>
+                    <label for="book-title" class="block text-sm font-medium">Product Name</label>
+                    <input type="text" id="book-title" class="w-full p-2 border rounded" required>
+                </div>
+                <div>
+                    <label for="book-author" class="block text-sm font-medium">Brand</label>
+                    <input type="text" id="book-author" class="w-full p-2 border rounded" required> 
+                </div> 
+                <div>
+                    <label for="book-price" class="block text-sm font-medium">Price</label>
+                    <input type="number" id="book-price" class="w-full p-2 border rounded" step="0.01" min="0" required>
+                </div>
+                <div>
+                    <label for="book-category" class="block text-sm font-medium">Category</label>
+                    <select id="book-category" class="w-full p-2 border rounded" required>
+                        <option value="">Select a category</option>
+                        <option value="Fiction">Desktop</option>
+                        <option value="Non-Fiction">Laptop</option>
+                        <option value="Sci-Fi">component</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="book-image" class="block text-sm font-medium">New Tech Cover Image (optional)</label>
+                    <input type="file" id="book-image" class="w-full p-2 border rounded" accept="image/jpeg,image/png">
+                    <div id="image-preview" class="mt-2">
+                        <img id="preview-img" class="w-[150px] h-[200px] object-cover rounded hidden" alt="Image Preview">
+                    </div>
+                </div>
+                <button onclick="addBook()" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Add Tech</button>
+            </div>
+        </div>
+        <div class="mt-8">
+            <h3 class="text-lg font-semibold mb-4">Manage Tech</h3>
+            <div id="admin-book-list" class="space-y-4"></div>
+        </div>
+        
+    </main>
+
+    <script src="script.js"></script>
+    
+
+
+    
+</body>
+</html>
+
+
+

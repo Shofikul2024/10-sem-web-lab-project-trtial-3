@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Shofikul-Islam Tech Point</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"> <i class="fas fa-laptop-code"></i> Shofikul-Islam Tech Point </a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#shop" class="dropbtn">Shop <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="laptops.html">Laptops</a>
+                    <a href="desktops.html">Desktops</a>
+                    <a href="components.html">Components</a>
+                    <a href="accessories.html">Accessories</a>
+                </div>
+            </div>
+            <a href="about-us.html">About</a>
+            <a href="contact-us.html">Contact</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+        <div class="icons">
+            <button id="menu-btn" class="fas fa-bars" aria-label="Open Menu"></button>
+            <button id="search-btn" class="fas fa-search" aria-label="Open Search"></button>
+            <a href="cart.html" class="cart-icon-wrapper" aria-label="View Shopping Cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-item-count">0</span>
+            </a>
+            <a href="loging.html" id="login-btn" class="fas fa-user" aria-label="Open Login"></a>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search products...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <main class="container mx-auto" style="padding-top: 12rem; padding-bottom: 5rem;">
+        <h1 class="title">Checkout</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <form class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Shipping Information</h3>
+                        <div class="space-y-4">
+                            <input type="text" placeholder="Full Name" class="w-full p-3 border rounded">
+                            <input type="text" placeholder="Address" class="w-full p-3 border rounded">
+                            <input type="text" placeholder="City" class="w-full p-3 border rounded">
+                            <input type="text" placeholder="Postal Code" class="w-full p-3 border rounded">
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Payment Details</h3>
+                        <p class="text-sm text-red-500 mb-2">This is a demo. Do not enter real credit card details.</p>
+                        <div class="space-y-4">
+                            <input type="text" placeholder="Card Number" class="w-full p-3 border rounded">
+                            <div class="flex space-x-4">
+                                <input type="text" placeholder="MM/YY" class="w-1/2 p-3 border rounded">
+                                <input type="text" placeholder="CVC" class="w-1/2 p-3 border rounded">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-4">Order Summary</h3>
+                <div class="space-y-3 border-b pb-4">
+                    <div class="flex justify-between"><span>Ultra-Slim Notebook (x1)</span><span>$999.00</span></div>
+                    <div class="flex justify-between"><span>Wireless Keyboard (x1)</span><span>$89.00</span></div>
+                </div>
+                <div class="space-y-2 mt-4">
+                    <div class="flex justify-between font-semibold"><span>Subtotal</span><span>$1088.00</span></div>
+                    <div class="flex justify-between"><span>Shipping</span><span>$15.00</span></div>
+                    <div class="flex justify-between font-bold text-xl mt-2 border-t pt-2"><span>Total</span><span>$1103.00</span></div>
+                </div>
+                <button class="w-full bg-blue-600 text-white mt-6 py-3 rounded-lg text-lg font-bold hover:bg-blue-700">Place Order</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html"><i class="fas fa-arrow-right"></i> Home</a>
+                <a href="laptops.html"><i class="fas fa-arrow-right"></i> Laptops</a>
+                <a href="desktops.html"><i class="fas fa-arrow-right"></i> Desktops</a>
+                <a href="about-us.html"><i class="fas fa-arrow-right"></i> About</a>
+                <a href="contact-us.html"><i class="fas fa-arrow-right"></i> Contact</a>
+                <a href="account.html"><i class="fas fa-arrow-right"></i> My Account</a>
+            </div>
+            <div class="box">
+                <h3>Policies</h3>
+                <a href="privacy-policy.html"><i class="fas fa-arrow-right"></i> Privacy Policy</a>
+                <a href="terms-of-service.html"><i class="fas fa-arrow-right"></i> Terms of Service</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/share/19PjMrpXgA/" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://www.instagram.com/mdshofikul492?igsh=MTFoY2gzdTFmNnYxaw==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/in/md-shofikul-islam-664224217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
+            </div>
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Don't miss any offers!</p>
+                <form action="">
+                    <input type="email" placeholder="your.email@example.com">
+                    <input type="submit" value="Subscribe" class="btn">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div class="credit">Created by <span>Shofikul Islam</span> | All Rights Reserved</div>
+    <script src="script.js"></script>
+</body>
+</html>
