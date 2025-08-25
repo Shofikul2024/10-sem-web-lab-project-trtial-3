@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #007bff;
+     --primary-background: #0C1421; 
     --dark-grey: #222;
     --light-grey: #666;
     --white: #fff;
@@ -9,6 +10,10 @@
     --off-white: #f7f7f7;
     --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     --border: 0.1rem solid rgba(0, 0, 0, 0.2);
+     background: var(--dark-grey); 
+     --custom-blue: #4A5CF4;
+      --blueviolet: blueviolet; 
+       --accent-blue: #3A86FF;
 }
 
 
@@ -37,7 +42,9 @@ html {
 }
 
 body {
-    background: var(--off-white);
+    /* background: var(--off-white); */
+
+    background: var(--white);
 }
 
 section {
@@ -74,6 +81,8 @@ section {
     text-align: center;
 }
 
+ 
+
 /* Header */
 .header {
     position: fixed;
@@ -81,8 +90,21 @@ section {
     left: 0;
     right: 0;
     z-index: 1000;
-    /* background: var(--white); */
-    background: var(--blue);
+    /* color: var(--custom-blue);  */
+      /* color:  var(--light-grey); */
+    /* background: var(--blueviolet); */
+     /* background-color: var(--gra); */
+     background: var(--primary-background);
+    color: var(--text-primary);
+
+     /* background: var(--white);  */
+      /* background: var(--primary-color);   */
+      
+      /* background: var(--primary-color);   */
+      /* color:blue; */
+    /* background: var(--primary-background); */
+    /* color: var(--text-primary); */
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
