@@ -24,6 +24,11 @@
     transition: all .2s linear;
 }
 
+
+
+
+
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -76,7 +81,8 @@ section {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: var(--white);
+    /* background: var(--white); */
+    background: var(--blue);
     display: flex;
     align-items: center;
     justify-content: space-between;
