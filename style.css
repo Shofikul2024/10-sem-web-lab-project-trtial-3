@@ -356,6 +356,19 @@ section {
     top: 0;
 }
 
+ 
+
+@media (max-width: 768px){
+
+
+.navbar.active{
+    background: black !important;
+}
+
+
+}
+
+
 .products .box-container .box .icons {
     position: absolute;
     top: -105%;
