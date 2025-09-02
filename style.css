@@ -115,7 +115,7 @@ section {
 .header .logo {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--dark-grey);
+    color: var(--white);
 }
 
 .header .logo i {
@@ -126,7 +126,7 @@ section {
 /* Navbar & Dropdown */
 .header .navbar a {
     font-size: 1.7rem;
-    color: var(--light-grey);
+    color: var(--white);
     margin: 0 1rem;
 }
 
@@ -146,7 +146,7 @@ section {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: black;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -175,7 +175,7 @@ section {
     font-size: 2.5rem;
     margin-left: 1.7rem;
     cursor: pointer;
-    color: var(--light-grey);
+    color: var(--white);
     background: none;
 }
 
@@ -273,15 +273,21 @@ section {
 .home .slide.active {
     display: flex;
 }
-
+ 
 .home .slide .content {
     flex: 1 1 40rem;
 }
 
 .home .slide .content span {
     color: var(--dark-grey);
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
+
+.home .slide .content p {
+    color: var(--dark-grey);
+    font-size: 2.6rem;
+}
+
 
 .home .slide .content h3 {
     font-size: 7rem;
@@ -298,7 +304,7 @@ section {
     border-radius: 1rem;
 }
 
-.home #next-slide,
+.home #next-s
 .home #prev-slide {
     position: absolute;
     top: 50%;
@@ -421,6 +427,13 @@ section {
     flex: 1 1 40rem;
 }
 
+.blog-img{
+
+    height: 240px;
+    width: 320px;
+    margin-top: 20px;
+}
+
 .about .img img {
     width: 100%;
     border-radius: .5rem;
@@ -521,7 +534,8 @@ section {
 
 /* Footer */
 .footer {
-    background: var(--dark-grey);
+   
+    background:  #0C1421 ;
 }
 
 .footer .box-container {
@@ -539,7 +553,7 @@ section {
 
 .footer .box-container .box a {
     font-size: 1.4rem;
-    color: var(--light-grey);
+    color: var(--white);
     padding: 1rem 0;
     display: block;
 }
@@ -555,7 +569,7 @@ section {
 
 .footer .box-container .box p {
     font-size: 1.5rem;
-    color: var(--light-grey);
+    color: var(--white);
 }
 
 .footer .box-container .box form input[type="email"] {
@@ -569,7 +583,7 @@ section {
     text-align: center;
     font-size: 2rem;
     padding: 2.5rem 1rem;
-    background: var(--black);
+    background: var(--primary-background);
     color: var(--white);
 }
 
